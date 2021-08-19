@@ -1,0 +1,66 @@
+*{margin: 0;padding: 0;box-sizing: border-box}
+body>div{
+    max-width: 630px;
+    margin: 4rem auto;
+}
+body{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+.line{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+}
+.tabs{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.tab-item{
+   
+    font-size:1.6rem;
+   
+    color: #c23564;
+    transition: all 0.5s ease;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    background-color:white;
+    opacity: 0.6;
+}
+.tab-item.active{
+    opacity: 1;
+}
+.tab-item:hover{
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+    cursor: pointer;
+}
+.tab-icon{
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+.tab-content{
+    display:flex;
+}
+
+.tab-pane{
+    color: #333;
+    margin-top: 1.5rem;
+    
+}
+.tab-pane>p{
+    font-size: 1.4rem;
+}
+.tab-content>.tab-pane.block{
+    display:block;
+}
